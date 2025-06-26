@@ -1,0 +1,242 @@
+.contact-us-main-container {
+  height: max-content;
+  margin-top: 60px;
+}
+
+.contact-us-main-container h3 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 42px;
+  margin: 0;
+}
+
+.contact-us-container {
+  max-width: 1400px;
+  display: flex;
+  width: 100%;
+  gap: 14px;
+  margin-top: 42px;
+}
+
+.contact-us-container .col-left {
+  width: 100%;
+  border: 1px solid #e3e3e5;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  padding: 30px 20px 0 30px;
+}
+
+.contact-us-container .col-left button {
+  margin-top: 52px;
+  border: 1px solid #fff;
+}
+
+.contact-us-container .col-left input,
+textarea {
+  font-family: "Wix Madefor Display", sans-serif;
+  height: 100%;
+  font-size: 22px;
+  outline: none;
+  background: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.contact-us-container .col-left input::placeholder {
+  font-size: 22px;
+}
+
+.contact-us-container .col-left button {
+  border: 1px solid #000;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.contact-us-container .col-left textarea::placeholder {
+  font-size: 22px;
+}
+
+textarea {
+  height: 200px;
+  max-width: 100%;
+  width: 100%;
+  background: #f9f9f9;
+  resize: none;
+  border: none;
+  border: 10px;
+  outline: none;
+  padding-left: 30px;
+}
+
+textarea::placeholder {
+  font-size: 22px;
+}
+
+button {
+  width: 100%;
+  height: 74px;
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.col-right {
+  max-width: calc(100% / 2 - 1rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 642px;
+  border: 1px solid #e3e3e5;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.contact-label {
+  display: block;
+  height: 74px;
+  margin-bottom: 22px;
+  background: #f9f9f9;
+  margin-top: 20px;
+}
+
+.contact-label.message {
+  height: 190px;
+  margin: 0;
+}
+
+.dark-mode .col-left button {
+  outline: none;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.dark-mode label {
+  background: #3c3c3c;
+  border-radius: 10px;
+}
+
+.dark-mode input#name {
+  background: #3c3c3c;
+  border: none;
+  border-radius: 10px;
+}
+
+.dark-mode textarea#message {
+  background: #3c3c3c;
+  border: none;
+  border-radius: 10px;
+}
+
+.dark-mode .col-right {
+  background: #3c3c3c;
+}
+
+.dark-mode input#email {
+  background: #3c3c3c;
+  border: none;
+  border-radius: 10px;
+}
+
+.dark-mode .contact-us-main-container {
+  height: max-content;
+}
+
+.dark-mode .contact-us-container .col-left {
+  border: 1px solid #3c3c3c;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.dark-mode .contact-us-container .col-right {
+  border: none;
+}
+
+.dark-mode .contact-us-main-container h3 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    gap: 0.6rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .contact-label {
+    margin-bottom: 1rem;
+  }
+
+  .contact-us-container .col-left input,
+  textarea {
+    font-size: 1.4rem;
+    padding: 0.6rem;
+  }
+
+  .contact-us-container .col-left input::placeholder {
+    font-size: 1.4rem;
+  }
+  .contact-us-container .col-left textarea::placeholder {
+    font-size: 1.4rem;
+  }
+
+  .contact-label {
+    height: 4rem;
+  }
+
+  .contact-us-main-container h3 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact-us-container .col-left {
+    border: 1px solid #e3e3e5;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+  .contact-us-container .col-right {
+    display: none;
+  }
+
+  .contact-us-container .col-left textarea {
+    margin-bottom: 0;
+  }
+
+  .contact-us-container .col-left button {
+    margin-top: 20px;
+  }
+
+  .contact-us-container .col-left button {
+    margin-top: 0.6rem;
+    height: 4rem;
+    margin-top: 30px;
+  }
+
+  .contact-us-main-container {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-us-main-container {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .contact-us-container .col-left {
+    width: 100%;
+  }
+
+  .contact-us-container .col-right {
+    max-width: calc(100% / 2 - 1rem);
+    width: 100%;
+  }
+  .contact-us-container .col-right img {
+    width: 100%;
+  }
+}

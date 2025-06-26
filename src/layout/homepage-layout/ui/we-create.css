@@ -1,0 +1,270 @@
+.main-container-create {
+  max-width: 1400px;
+  margin-top: 60px;
+}
+
+.main-container-create h3 {
+  font-size: 42px;
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.create-title {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  margin-top: 42px;
+}
+
+.info-col-left {
+  max-width: calc(100% / 2 - 0.7rem);
+  width: 100%;
+  border: 1px solid #b1b1b1;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  padding: 50px 0 0 20px;
+}
+
+.info-col-left h4 {
+  font-family: "Wix Madefor Display", sans-serif;
+  margin: 0;
+  font-size: 25px;
+}
+
+.info-col-right {
+  max-width: calc(100% / 2 - 0.7rem);
+  width: 100%;
+  height: 254px;
+  border: 1px solid #b1b1b1;
+  border-radius: 10px;
+  padding: 50px 30px 0 20px;
+}
+
+.info-col-right p {
+  font-family: "Wix Madefor Display", sans-serif;
+  margin: 0;
+  color: #707070;
+  font-size: 22px;
+}
+
+.we-create {
+  display: flex;
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.we-create h5 {
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.we-create-container {
+  padding: 20px 0 0 20px;
+  width: 340px;
+  height: 120px;
+  background: #e3e3e5;
+  border-radius: 10px;
+  transition: .4s ease;
+}
+
+.we-create-container:hover{
+  background: #3c3c3c;
+  color: #fff;
+}
+
+.we-create2-container.hovered {
+  background-color: #3c3c3c;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.we-create-container.hovered,
+.we-create2-container.hovered {
+  background-color: #3c3c3c;
+  color: #fff;
+}
+
+.we-create-container:hover .we-create2-container{
+  background: #3c3c3c;
+}
+
+.we-create-container h5 {
+  font-size: 22px;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.we-create2 {
+  display: flex;
+  margin-top: 12px;
+  gap: 13px;
+}
+
+.we-create2-container h6 {
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.we-create2-container {
+  padding: 20px 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  height: 142px;
+  border: 1px solid #e0e0e2;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  transition: .4s ease;
+}
+
+.we-create2-container:hover{
+  background: #3c3c3c;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.we-create2-container h6 {
+  font-family: "Wix Madefor Display", sans-serif;
+
+  align-self: flex-start;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.we-create2-container img {
+  align-self: flex-start;
+}
+
+.dark-mode .info-col-left h4 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.dark-mode .main-container-create h3 {
+  color: #fff;
+}
+
+.dark-mode .info-col-right {
+  border: 1px solid #3c3c3c;
+}
+
+.dark-mode .we-create-container h5 {
+  color: #fff;
+}
+
+.dark-mode .we-create-container {
+  background: #3c3c3c;
+}
+
+@media (max-width: 768px) {
+  .main-container-create {
+    margin-top: 2rem;
+  }
+
+  .main-container-create h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .create-title {
+    gap: 0.6rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .create-title > div {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .info-col-left {
+    border: 1px solid #dbdbe2;
+    border-radius: 10px;
+  }
+
+  .info-col-left h4 {
+    font-size: 25px;
+  }
+
+  .info-col-right {
+    border: 1px solid #dbdbe2;
+    border-radius: 10px;
+  }
+
+  .info-col-right p {
+    font-size: 16px;
+  }
+
+  .we-create {
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .we-create-container {
+    max-width: calc(100% / 2 - 0.3em);
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .we-create-container h5 {
+    font-size: 18px;
+  }
+
+  .we-create2 {
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .we-create2-container {
+    max-width: calc(100% / 2 - 0.4rem);
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .we-create2-container img {
+    width: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-title {
+    flex-direction: column;
+  }
+
+  .create-title > div {
+    max-width: 100%;
+  }
+
+  .we-create2-container {
+    height: 10rem;
+  }
+
+  .we-create2-container h6 {
+    font-size: 1rem;
+  }
+
+  .we-create2-container img {
+    width: 1.4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-container-create {
+    margin-top: 20px;
+  }
+
+  .create-title {
+    margin-top: 30px;
+  }
+}

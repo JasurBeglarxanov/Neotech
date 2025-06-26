@@ -1,0 +1,149 @@
+.hero-container {
+  max-width: 1446px;
+  height: 658px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+  
+}
+
+.hero-title {
+  padding: 110px 0 20px 20px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #e3e3e5;
+  border-right: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: .4s ease;
+}
+
+.hero-title h1 {
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 42px;
+  line-height: 110%;
+}
+
+.hero-title p {
+  font-family: "Wix Madefor Display", sans-serif;
+  align-self: self-start;
+  width: 65%;
+  font-size: 14px;
+  margin: 0;
+  max-width: 440px;
+}
+
+.hero-image {
+  max-width: calc(100% / 2 - 1rem);
+  width: 100%;
+  border: 1px solid #dbdbe2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  transition: .4s ease;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 437px;
+}
+
+.hero-image img{
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    filter: drop-shadow(10px);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dark-mode .hero-title {
+  border: 1px solid #3c3c3c;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.dark-mode .hero-image {
+  border: none;
+  background: #3c3c3c;
+}
+
+.dark-mode .hero-title h1 {
+  color: #fff;
+}
+
+.dark-mode .hero-title p {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    margin-bottom: 2rem;
+  }
+
+  .hero-title p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: max-content;
+    gap: 10px;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title {
+    height: max-content;
+    padding: 30px 15px 20px;
+    border: 1px solid #dbdbe2;
+  }
+
+  .hero-container h1 {
+    align-self: self-start;
+    max-width: 90%;
+    margin-bottom: 80px;
+  }
+
+  .hero-title p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    padding: 20px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: calc(100% / 2 - 1rem);
+  }
+
+  .hero-container {
+    margin-bottom: 10px;
+    gap: 2rem;
+  }
+
+  .hero-title h1 {
+    font-size: 20px;
+  }
+}

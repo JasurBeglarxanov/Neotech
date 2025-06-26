@@ -1,0 +1,134 @@
+.aboutpage2 {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-about2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+.aboutpage2 h1,
+a {
+  text-decoration: none;
+  color: #000;
+  margin: 0;
+}
+
+.aboutpage2-container {
+  display: flex;
+  gap: 1px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.aboutpage2-container-col-left h3 {
+  font-size: 26px;
+}
+
+.aboutpage2-container-col-left {
+  width: 100%;
+  border: 1px solid #dbdbe2;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  padding: 50px 0 0 20px;
+  max-width: calc(100% / 2 - 0.1rem);
+  transition: .4s ease;
+}
+
+.aboutpage2-container-col-left:hover{
+  border-radius: 10px;
+  background: #000;
+}
+
+.aboutpage2-container-col-left:hover h3{
+  color: #fff;
+}
+
+.aboutpage2-container-col-left:hover li{
+  color: #fff;
+}
+
+.aboutpage2-container-col-left p {
+  max-width: 99%;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #707070;
+}
+
+.aboutpage2-container-col-left li {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.aboutpage2-container-col-left li:last-of-type {
+  margin-bottom: none;
+}
+
+.aboutpage2-col-right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100% / 2 - 1rem);
+  border: 1px solid #dbdbe2;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: .4s ease;
+}
+
+.aboutpage2-col-right:hover{
+  background: #000;
+}
+
+.aboutpage2-col-right img {
+  width: 100%;
+}
+
+.main-aboutpage2{
+  margin-top: 20px;
+}
+
+.dark-mode .aboutpage2-container-col-left {
+  border: 1px solid #3c3c3c;
+  border-right: none;
+}
+
+.dark-mode .aboutpage2-col-right {
+  background: #3c3c3c;
+  border: none;
+}
+
+.dark-mode .aboutpage2 h1 {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .aboutpage2-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .aboutpage2-container-col-left {
+    border: 1px solid #dbdbe2;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .aboutpage2-col-right {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-about2 {
+    margin-top: 20px;
+  }
+}

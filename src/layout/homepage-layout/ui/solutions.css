@@ -1,0 +1,144 @@
+.main-container-solutions {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.main-container-solutions h1 {
+  font-size: 42px;
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.solutions {
+  margin-top: 42px;
+  display: flex;
+  gap: 13px;
+}
+
+.solutions-wrapper {
+  margin-top: 42px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.solution-container {
+  max-width: calc(100% / 4 - 1rem);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 340px;
+  border: 1px solid #e3e3e5;
+  border-radius: 10px;
+  transition: .4s ease;
+}
+
+.solution-container:hover{
+  background: #3c3c3c;
+  color: #fff;
+}
+
+.solution-container .img-wrapper {
+  max-width: 110px;
+  width: 100%;  
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.solution-container .img-wrapper img{
+  width: 100%;
+}
+
+.solution-container h3,
+a {
+  font-family: "Wix Madefor Display", sans-serif;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.solution-container p {
+  align-self: flex-end;
+  color: #3c3c3c;
+  margin: 0;
+}
+
+.solutions2 {
+  margin-top: 12px;
+  display: flex;
+  gap: 13px;
+}
+
+.dark-mode .solution-container {
+  border: 1px solid #3c3c3c;
+}
+
+.dark-mode .img {
+  background: #3c3c3c;
+}
+
+.dark-mode .solution-container h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.dark-mode .we-create2-container {
+  border: 1px solid #1c1c1c;
+  border-top: none;
+  background: #000;
+}
+
+.dark-mode .we-create2-container h6 {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .solution-container {
+    width: 100%;
+    max-width: calc(100% / 2 - 0.3rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container-solutions h3 {
+    font-size: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .main-container-solutions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .main-container-solutions h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .solutions {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .solutions-wrapper {
+    gap: 0.6rem;
+  }
+
+  .solution-container {
+    padding: 1.5rem;
+    height: 200px;
+  }
+}
+@media (max-width: 1024px) {
+}
