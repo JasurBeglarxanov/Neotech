@@ -9,7 +9,6 @@ import { useTranslation } from "react-i18next";
 function Header() {
   const { t, i18n } = useTranslation();
   const { darkMode, setDarkMode } = useContext(ThemeContext);
-  console.log("darkMode", darkMode);
 
   return (
     <header>

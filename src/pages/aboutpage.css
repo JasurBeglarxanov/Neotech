@@ -49,14 +49,9 @@
   width: 100%;
 }
 
-.dark-mode .aboutpage-container img {
-  max-width: 130px;
-  width: 100%;
-}
-
 .dark-mode .aboutpage-container img{
-  padding: 30px;
   width: 100%;
+  padding: 30px;
   border: 1px solid #fff;
   border-radius: 50%;
 }
@@ -65,12 +60,19 @@
   background: #3c3c3c;
 }
 
-.dark-mode .aboutpage-container:hover p {
+.aboutpage-container:hover {
+  background: #3c3c3c;
+}
+
+.aboutpage-container:hover p{
   color: #fff;
 }
 
-.aboutpage-container:hover {
-  background: #000;
+.dark-mode .aboutpage-container:hover p{
+  color: #fff;
+}
+
+.aboutpage-container:hover h3{
   color: #fff;
 }
 

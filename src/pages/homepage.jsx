@@ -1,13 +1,13 @@
 import Header from "../components/header";
 import Main from "../layout/homepage-layout/main";
 import Footer from "../components/footer";
-import './homepage.css'
-import { useState, useEffect } from "react";
+import "./homepage.css";
+import { useEffect, useContext } from "react";
+import { ThemeContext } from "../themeContext";
 
 function HomePage() {
-  
-  const [darkMode, setDarkMode] = useState(false);  
-  
+  const {darkMode}= useContext(ThemeContext);
+
   useEffect(() => {
     document.body.className = darkMode ? "dark-mode" : "light-mode";
   }, [darkMode]);
@@ -15,8 +15,8 @@ function HomePage() {
   return (
     <div className="content">
       <div className="container">
-        <Header toggleTheme={() => setDarkMode(!darkMode)} darkMode={darkMode} />
-        <Main darkMode={darkMode} />
+        <Header />
+        <Main />
         <Footer />
       </div>
     </div>
