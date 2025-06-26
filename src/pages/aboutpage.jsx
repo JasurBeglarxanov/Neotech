@@ -7,14 +7,14 @@ import image5 from "../images/Frame 32 (2).svg";
 import image6 from "../images/Frame 34 (1).svg";
 import image7 from "../images/Frame 36 (2).svg";
 import image8 from "../images/Frame 38 (2).svg";
-import darkmode1 from '../icons-dark-mode/dark-mode1.svg'
-import darkmode2 from '../icons-dark-mode/dark-mode2.svg'
-import darkmode3 from '../icons-dark-mode/dark-mode3.svg'
-import darkmode4 from '../icons-dark-mode/dark-mode4.svg'
-import darkmode5 from '../icons-dark-mode/dark-mode5.svg'
-import darkmode6 from '../icons-dark-mode/dark-mode6.svg'
-import darkmode7 from '../icons-dark-mode/dark-mode7.svg'
-import darkmode8 from '../icons-dark-mode/dark-mode8.svg'
+import darkmode1 from '../icons-dark-mode/darkmode1.svg'
+import darkmode2 from '../icons-dark-mode/darkmode2.svg'
+import darkmode3 from '../icons-dark-mode/darkmode3.svg'
+import darkmode4 from '../icons-dark-mode/darkmode4.svg'
+import darkmode5 from '../icons-dark-mode/darkmode5.svg'
+import darkmode6 from '../icons-dark-mode/darkmode6.svg'
+import darkmode7 from '../icons-dark-mode/darkmode7.svg'
+import darkmode8 from '../icons-dark-mode/darkmode8.svg'
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
