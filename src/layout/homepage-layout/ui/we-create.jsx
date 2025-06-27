@@ -25,6 +25,7 @@ function WeCreate() {
   ];
   const lightIcons = [icon1, icon2, icon3, icon4];
   const darkIcons = [darkmode9, darkmode10, darkmode11, darkmode12];
+  const hoveredIcons = [darkmode9, darkmode10, darkmode11, darkmode12];
 
   return (
     <div className="main-container-create">
@@ -68,7 +69,13 @@ function WeCreate() {
             >
               <h6>{t(item)}</h6>
               <img
-                src={darkMode ? darkIcons[index] : lightIcons[index]}
+                src={
+                  hoveredIndex === index
+                    ? darkIcons[index] 
+                    : darkMode
+                    ? darkIcons[index] 
+                    : lightIcons[index] 
+                }
                 alt=""
               />
             </div>

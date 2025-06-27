@@ -18,59 +18,62 @@ import darkmode8 from "../icons-dark-mode/darkmode8.svg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../themeContext";
+import { useTranslation } from "react-i18next";
 
 function AboutPage() {
-  const   {darkMode} = useContext(ThemeContext)
+  const { t } = useTranslation();
+
+  const { darkMode } = useContext(ThemeContext);
 
   return (
     <div className="content">
       <div className="container">
         <div className="aboutpage">
           <Link to="/">
-            <h1>Наши решения</h1>
+            <h1>{t('our_solutions2')}</h1>
           </Link>
           <div className="main-aboutpage">
             <div className="aboutpage-container">
-              <h3>IT проекты</h3>
+              <h3>{t('it_projects')}</h3>
               <img src={darkMode ? darkmode1 : image1} alt="" />
               <p>01</p>
             </div>
 
             <div className="aboutpage-container">
-              <h3>IT экспертизы</h3>
+              <h3>{t('it_expertise')}</h3>
               <img src={darkMode ? darkmode2 : image2} alt="" />
               <p>02</p>
             </div>
 
             <div className="aboutpage-container">
-              <h3>Машинное обучение</h3>
+              <h3>{t('machine_learning')}</h3>
               <img src={darkMode ? darkmode3 : image3} alt="" />
               <p>03</p>
             </div>
             <div className="aboutpage-container">
-              <h3>Нейросети</h3>
+              <h3>{t('Neural_networks')}</h3>
               <img src={darkMode ? darkmode4 : image4} alt="" />
               <p>04</p>
             </div>
           </div>
           <div className="main-aboutpage2">
             <div className="aboutpage-container">
-              <h3>Телекоммуникации</h3>
+              <h3>{t('Telecommunication')}</h3>
               <img src={darkMode ? darkmode5 : image5} alt="" />
               <p>05</p>
             </div>
             <div className="aboutpage-container">
-              <h3>Big Data</h3>
+              <h3>{t('Big_Data')}</h3>
               <img src={darkMode ? darkmode6 : image6} alt="" />
               <p>06</p>
             </div>
             <div className="aboutpage-container">
-              <h3>Внедрение технологий</h3>
+              <h3>{t('Technology_Integration')}</h3>
               <img src={darkMode ? darkmode7 : image7} alt="" />
               <p>07</p>
             </div>
             <div className="aboutpage-container">
-              <h3>Кибербезопасность</h3>
+              <h3>{t('Cyber_Security')}</h3>
               <img src={darkMode ? darkmode8 : image8} alt="" />
               <p>08</p>
             </div>

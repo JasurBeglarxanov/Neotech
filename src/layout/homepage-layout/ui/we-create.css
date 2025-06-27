@@ -142,6 +142,8 @@
   font-size: 25px;
 }
 
+.dark-mode .we-create2-container :hover img{}
+
 .dark-mode .main-container-create h3 {
   color: #fff;
 }

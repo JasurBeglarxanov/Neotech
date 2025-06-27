@@ -378,6 +378,10 @@ a {
   .header-container-2 {
     margin-top: 0.6rem;
   }
+
+  .license-container{
+    width: 50%;
+  }
   header {
     margin-bottom: 20px;
   }
